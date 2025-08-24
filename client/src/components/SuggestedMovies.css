@@ -1,0 +1,102 @@
+.movie-section {
+  padding: 40px;
+  max-width: 1200px;
+  margin: auto;
+  background: transparent;
+  margin-top: 120px;
+}
+.movie-grid {
+  display: flex;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 50px;
+  overflow-x: auto;
+}
+
+
+.movie-card {
+  min-width: 220px;   /* keeps all cards same size */
+      /* prevents shrinking */
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 400px;   /* 👈 fixed width for all cards */
+  height: 500px;  /* optional: fix height too */
+}
+
+.movie-card:hover {
+  transform: translateY(-5px);
+}
+
+.movie-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.movie-info h3 {
+  margin-left: 10px;
+  margin: 5px 0;
+  font-size: 20px;
+}
+
+.movie-info p {
+  margin-left: 10px;
+  margin: 4px 0;
+  color: #555;
+}
+
+.movie-card .btn {
+  margin-top: auto;         /* 👈 Always pushes button to bottom */
+  padding: 8px 16px;
+  background: #ff0000;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+
+.btn:hover {
+  background: #e60000;
+}
+.section-title {
+  text-align: left;     /* Align text to left */
+  font-size: 25px;      /* Bigger font size */
+  /* 👈 Moves it upward */   /* 👈 Push slightly to the left */
+  margin-bottom: 100px;
+}
+
+.section-title .now {
+  color: #e65757;       /* Bright red */
+}
+
+.section-title .showing {
+  color: #ffffff;       /* White */
+}
+.rating{
+  text-align: right;
+}
+.view-all {
+  
+  padding: 12px 24px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+
+.view-all:hover {
+  background: #cc0000;
+  transform: translateX(3px);
+}
+
+.arrow-icon {
+  font-size: 18px;
+}

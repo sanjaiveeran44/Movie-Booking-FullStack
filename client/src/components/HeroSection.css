@@ -1,0 +1,78 @@
+.hero {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  padding-left: 5%;
+  color: white;
+  overflow: hidden;
+}
+
+/* Background image */
+.hero-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(40%); /* dims the image */
+  z-index: 0;
+}
+
+/* Hero text content */
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 600px;
+  filter: brightness(110%); /* brighten the text */
+}
+
+.marvel-logo {
+  width: 250px;
+  margin-top: 100px;
+}
+
+.movie-title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.movie-info {
+  font-size: 1rem;
+  color: #bbb;
+  margin-bottom: 15px;
+}
+
+.movie-desc {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.explore-btn {
+  padding: 12px 24px;
+  background: #d25259; /* Netflix red */
+  border: none;
+  border-radius: 30px;
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.explore-btn:hover {
+  background: #f6121d;
+}
+
+/* 🔹 Add arrow dynamically */
+.explore-btn::after {
+  content: " →";  /* arrow symbol */
+  margin-left: 8px;
+  transition: margin-left 0.3s ease;
+}
+
+.explore-btn:hover::after {
+  margin-left: 12px; /* smooth arrow slide */
+}

@@ -1,0 +1,84 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: transparent; /* ✅ Transparent background */
+  z-index: 10;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: white;
+}
+
+.logo span {
+  color: #df585f; /* Netflix-style red */
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+  padding: 20px 40px;
+  border: 1px  rgb(145, 140, 140);   /* ✅ White border */
+  border-radius: 30px;       /* ✅ Circular radius */
+  background: rgba(255, 255, 255, 0.17); /* ✅ Transparent bg */
+}
+
+.nav-links button {
+  background: transparent;
+  border: none;
+  color: white;   /* ✅ White text */
+  font-size: 1rem;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links :hover {
+      /* zoom in */
+  background: rgba(255, 255, 255, 0.15);  /* glowing white bg */
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.4); /* light glow */
+}
+
+
+.right-section {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.search-icon {
+  font-size: 1.3rem;
+  color: white;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.search-icon:hover {
+  color: #e50914;
+}
+
+.login-btn {
+  padding: 8px 18px;
+  border: none;
+  border-radius: 20px;
+  background: #ce4148;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.login-btn:hover {
+  background: #b00610;
+}

@@ -1,0 +1,29 @@
+/* Apply background to the whole page */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(45deg, #000 0%, #000 70%, #8b0000 100%);
+  background-attachment: fixed;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+.hero-title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700; /* bold */
+  font-size: 48px;
+}
+body {
+  overscroll-behavior: none; /* Prevent scroll chaining / bounce */
+  margin: 0; /* Make sure no default margin */
+  padding: 0;
+  overflow-x: hidden; /* optional: hide horizontal scroll */
+}
