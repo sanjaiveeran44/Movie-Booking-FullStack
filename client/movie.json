@@ -24,13 +24,14 @@
       "theater": "INOX",
       "image": "./src/assets/doctorstrange.jpg"
     },
-    {
-      "id": 4,
-      "name": "Spider-Man: No Way Home",
-      "ticket": "₹300",
+     {
+       "id": 4,
+       "name": "Spider-Man: No Way Home",
+       "ticket": "₹300",
       "rating": "4.9",
-      "theater": "PVR Cinemas",
-      "image": "./src/assets/spiderman.jpg"
-    }
+       "theater": "PVR Cinemas",
+       "image": "./src/assets/spiderman.jpg"
+     }
+    
   ]
 }

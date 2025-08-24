@@ -5,10 +5,6 @@ import { FiSearch } from "react-icons/fi";
 const Navbar = () => {
   return (
     <header className="navbar">
-      <div className="logo">
-        Night<span> Show</span>
-      </div>
-
       {/* 🔹 Nav Links */}
       <nav className="nav-links">
         <button>Home</button>

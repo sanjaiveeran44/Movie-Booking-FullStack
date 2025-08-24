@@ -10,17 +10,6 @@
   background: transparent; /* ✅ Transparent background */
   z-index: 10;
 }
-
-.logo {
-  font-size: 1.8rem;
-  font-weight: bold;
-  color: white;
-}
-
-.logo span {
-  color: #df585f; /* Netflix-style red */
-}
-
 .nav-links {
   display: flex;
   gap: 20px;
@@ -28,6 +17,8 @@
   border: 1px  rgb(145, 140, 140);   /* ✅ White border */
   border-radius: 30px;       /* ✅ Circular radius */
   background: rgba(255, 255, 255, 0.17); /* ✅ Transparent bg */
+  margin-left: 40%;
+
 }
 
 .nav-links button {

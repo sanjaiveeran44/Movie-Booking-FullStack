@@ -7,7 +7,7 @@ export default function Suggested() {
 
   // Fetch data from JSON Server
   useEffect(() => {
-    fetch("http://localhost:3001/movies")
+    fetch("http://localhost:5000/movies")
       .then(res => res.json())
       .then(data => setMovies(data))
       .catch(err => console.error("Error fetching movies:", err));
@@ -31,13 +31,13 @@ export default function Suggested() {
             </div>
           </div>
         ))}
-      </div>
-
       <div className="view-all-card">
         <button className="btn view-all">
-            View All <FaArrowRight className="arrow-icon" />
+            More <FaArrowRight className="arrow-icon" />
         </button>
       </div>  
+      </div>
+
     </section>
   );
 }

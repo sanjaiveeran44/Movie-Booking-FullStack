@@ -2,13 +2,15 @@ import React from "react";
 import "./HeroSection.css";
 import marvelLogo from "../assets/marvel.png";
 import guardiansBg from "../assets/bg.jpg";
-
 const Hero = () => {
   return (
     <section className="hero">
       <img src={guardiansBg} alt="Guardians Background" className="hero-bg" />
 
       <div className="hero-content">
+        <div className="logo">
+          Night<span> Show</span>
+        </div>
         <img src={marvelLogo} alt="Marvel Studios" className="marvel-logo" />
 
         <h1 className="movie-title">Guardians of the Galaxy</h1>

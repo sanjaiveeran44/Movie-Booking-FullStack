@@ -6,6 +6,7 @@
   padding-left: 5%;
   color: white;
   overflow: hidden;
+  top: 0;
 }
 
 /* Background image */
@@ -26,11 +27,11 @@
   z-index: 1;
   max-width: 600px;
   filter: brightness(110%); /* brighten the text */
+  background:transparent;
 }
 
 .marvel-logo {
-  width: 250px;
-  margin-top: 100px;
+  width: 270px;  
 }
 
 .movie-title {
@@ -75,4 +76,13 @@
 
 .explore-btn:hover::after {
   margin-left: 12px; /* smooth arrow slide */
+}
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: white;
+}
+
+.logo span {
+  color: #df585f; /* Netflix-style red */
 }
