@@ -6,7 +6,11 @@
       "ticket": "₹250",
       "rating": "4.8",
       "theater": "PVR Cinemas",
-      "image": "./src/assets/avengers.jpg"
+      "image": "./src/assets/avengers.jpg",
+      "genre": "Action, Sci-Fi",
+      "duration": "3h 2m",
+      "language": "English, Hindi",
+      "about": "After the devastating events of Infinity War, the Avengers assemble once more to reverse Thanos' actions and restore balance to the universe."
     },
     {
       "id": 2,
@@ -14,7 +18,11 @@
       "ticket": "₹200",
       "rating": "4.7",
       "theater": "Cinepolis",
-      "image": "./src/assets/blackpanther.png"
+      "image": "./src/assets/blackpanther.png",
+      "genre": "Action, Adventure",
+      "duration": "2h 14m",
+      "language": "English, Hindi",
+      "about": "T'Challa returns to Wakanda to take his rightful place as king, but must face a challenger who puts the fate of Wakanda and the world at risk."
     },
     {
       "id": 3,
@@ -22,16 +30,23 @@
       "ticket": "₹180",
       "rating": "4.6",
       "theater": "INOX",
-      "image": "./src/assets/doctorstrange.jpg"
+      "image": "./src/assets/doctorstrange.jpg",
+      "genre": "Fantasy, Action",
+      "duration": "1h 55m",
+      "language": "English, Hindi",
+      "about": "A former neurosurgeon embarks on a journey of healing, only to be drawn into the world of mystic arts and alternate dimensions."
     },
-     {
-       "id": 4,
-       "name": "Spider-Man: No Way Home",
-       "ticket": "₹300",
+    {
+      "id": 4,
+      "name": "Spider-Man: No Way Home",
+      "ticket": "₹300",
       "rating": "4.9",
-       "theater": "PVR Cinemas",
-       "image": "./src/assets/spiderman.jpg"
-     }
-    
+      "theater": "PVR Cinemas",
+      "image": "./src/assets/spiderman.jpg",
+      "genre": "Action, Adventure",
+      "duration": "2h 28m",
+      "language": "English, Hindi",
+      "about": "With Spider-Man's identity revealed, Peter seeks help from Doctor Strange, leading to multiverse chaos with villains from other dimensions."
+    }
   ]
 }

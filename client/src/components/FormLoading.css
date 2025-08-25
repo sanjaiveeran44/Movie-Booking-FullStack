@@ -1,0 +1,109 @@
+/* FormSkeleton.css */
+
+/* Base shimmer animation */
+@keyframes shimmer {
+  0% {
+    background-position: -468px 0;
+  }
+  100% {
+    background-position: 468px 0;
+  }
+}
+
+.skeleton-box {
+  background: linear-gradient(90deg, #2a2a2a 25%, #3a3a3a 50%, #2a2a2a 75%);
+  background-size: 400% 100%;
+  animation: shimmer 1.5s infinite;
+  border-radius: 8px;
+}
+
+/* Form skeleton container */
+.booking-form-skeleton {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+/* Form group skeleton */
+.form-group-skeleton {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* Label skeleton */
+.label-skeleton {
+  height: 20px;
+  width: 35%;
+  margin-bottom: 8px;
+}
+
+/* Input skeleton */
+.input-skeleton {
+  height: 55px;
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* Select skeleton */
+.select-skeleton {
+  height: 55px;
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* Button skeleton */
+.button-skeleton-container {
+  margin-top: 10px;
+}
+
+.button-skeleton {
+  height: 56px;
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* Different label widths for variety */
+.form-group-skeleton:nth-child(1) .label-skeleton {
+  width: 25%;
+}
+
+.form-group-skeleton:nth-child(2) .label-skeleton {
+  width: 40%;
+}
+
+.form-group-skeleton:nth-child(3) .label-skeleton {
+  width: 45%;
+}
+
+/* Responsive adjustments for form skeleton */
+@media (max-width: 768px) {
+  .label-skeleton {
+    height: 18px;
+  }
+  
+  .input-skeleton,
+  .select-skeleton {
+    height: 50px;
+  }
+  
+  .button-skeleton {
+    height: 52px;
+  }
+}
+
+@media (max-width: 480px) {
+  .label-skeleton {
+    height: 16px;
+    width: 50%;
+  }
+  
+  .input-skeleton,
+  .select-skeleton {
+    height: 45px;
+  }
+  
+  .button-skeleton {
+    height: 48px;
+  }
+}

@@ -1,0 +1,157 @@
+/* MovieDetailsSkeleton.css */
+
+/* Base shimmer animation */
+@keyframes shimmer {
+  0% {
+    background-position: -468px 0;
+  }
+  100% {
+    background-position: 468px 0;
+  }
+}
+
+.skeleton-box {
+  background: linear-gradient(90deg, #2a2a2a 25%, #3a3a3a 50%, #2a2a2a 75%);
+  background-size: 400% 100%;
+  animation: shimmer 1.5s infinite;
+  border-radius: 8px;
+}
+
+/* Movie poster skeleton */
+.movie-poster-skeleton {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.poster-skeleton {
+  width: 200px;
+  height: 300px;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+/* Movie title skeleton */
+.movie-title-skeleton {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.title-skeleton {
+  height: 36px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Movie meta skeleton */
+.movie-meta-skeleton {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.meta-item-skeleton {
+  height: 40px;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.meta-item-skeleton:nth-child(1) {
+  width: 85%;
+}
+
+.meta-item-skeleton:nth-child(2) {
+  width: 75%;
+}
+
+.meta-item-skeleton:nth-child(3) {
+  width: 70%;
+}
+
+.meta-item-skeleton:nth-child(4) {
+  width: 80%;
+}
+
+.meta-item-skeleton:nth-child(5) {
+  width: 90%;
+}
+
+/* Theater info skeleton */
+.theater-info-skeleton {
+  margin-bottom: 20px;
+}
+
+.theater-skeleton {
+  height: 45px;
+  width: 100%;
+  border-radius: 4px;
+}
+
+/* Movie about skeleton */
+.movie-about-skeleton {
+  margin-top: 20px;
+}
+
+.about-title-skeleton {
+  height: 24px;
+  width: 60%;
+  margin-bottom: 15px;
+}
+
+.about-text-skeleton {
+  height: 18px;
+  margin-bottom: 8px;
+  border-radius: 4px;
+}
+
+.line-1 {
+  width: 100%;
+}
+
+.line-2 {
+  width: 95%;
+}
+
+.line-3 {
+  width: 85%;
+}
+
+.line-4 {
+  width: 70%;
+}
+
+/* Responsive adjustments for movie details skeleton */
+@media (max-width: 768px) {
+  .poster-skeleton {
+    width: 150px;
+    height: 225px;
+  }
+  
+  .title-skeleton {
+    height: 28px;
+  }
+  
+  .meta-item-skeleton {
+    height: 35px;
+  }
+  
+  .theater-skeleton {
+    height: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .poster-skeleton {
+    width: 120px;
+    height: 180px;
+  }
+  
+  .title-skeleton {
+    height: 24px;
+    width: 90%;
+  }
+  
+  .meta-item-skeleton {
+    height: 32px;
+  }
+}

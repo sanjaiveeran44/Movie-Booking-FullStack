@@ -1,0 +1,239 @@
+/* SeatSkeleton.css */
+
+/* Base shimmer animation */
+@keyframes shimmer {
+  0% {
+    background-position: -468px 0;
+  }
+  100% {
+    background-position: 468px 0;
+  }
+}
+
+.skeleton-box {
+  background: linear-gradient(90deg, #2a2a2a 25%, #3a3a3a 50%, #2a2a2a 75%);
+  background-size: 400% 100%;
+  animation: shimmer 1.5s infinite;
+  border-radius: 8px;
+}
+
+/* Screen skeleton */
+.screen-skeleton {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.screen-text-skeleton {
+  height: 40px;
+  width: 200px;
+  margin: 0 auto;
+  border-radius: 20px;
+}
+
+/* Seats grid skeleton */
+.seats-grid-skeleton {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 30px;
+}
+
+.seat-row-skeleton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.seat-row-skeleton.vip-row-skeleton {
+  margin: 15px 0;
+  padding: 10px 0;
+  background: rgba(255, 215, 0, 0.05);
+  border-radius: 8px;
+  border: 1px solid rgba(255, 215, 0, 0.2);
+}
+
+/* Row label skeleton */
+.row-label-skeleton {
+  width: 30px;
+  text-align: center;
+}
+
+.label-box-skeleton {
+  height: 20px;
+  width: 20px;
+  margin: 0 auto;
+}
+
+/* Seats in row skeleton */
+.seats-in-row-skeleton {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.seat-skeleton-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.seat-item-skeleton {
+  width: 35px;
+  height: 35px;
+  border-radius: 8px;
+}
+
+.seat-item-skeleton.vip-seat-skeleton {
+  background: linear-gradient(90deg, #4a4a00 25%, #666600 50%, #4a4a00 75%);
+  background-size: 400% 100%;
+  animation: shimmer 1.5s infinite;
+  border: 2px solid rgba(255, 215, 0, 0.3);
+}
+
+/* Seat legend skeleton */
+.seat-legend-skeleton {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+  padding: 20px;
+  background: rgba(10, 10, 10, 0.5);
+  border-radius: 10px;
+}
+
+.legend-item-skeleton {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.legend-seat-skeleton {
+  width: 25px;
+  height: 25px;
+  border-radius: 8px;
+}
+
+.legend-seat-skeleton.vip-legend-skeleton {
+  background: linear-gradient(90deg, #4a4a00 25%, #666600 50%, #4a4a00 75%);
+  background-size: 400% 100%;
+  animation: shimmer 1.5s infinite;
+  border: 2px solid rgba(255, 215, 0, 0.3);
+}
+
+.legend-text-skeleton {
+  height: 16px;
+  width: 60px;
+}
+
+/* Add staggered animation delays for more natural effect */
+.seat-row-skeleton:nth-child(1) .skeleton-box {
+  animation-delay: 0s;
+}
+
+.seat-row-skeleton:nth-child(2) .skeleton-box {
+  animation-delay: 0.1s;
+}
+
+.seat-row-skeleton:nth-child(3) .skeleton-box {
+  animation-delay: 0.2s;
+}
+
+.seat-row-skeleton:nth-child(4) .skeleton-box {
+  animation-delay: 0.3s;
+}
+
+.seat-row-skeleton:nth-child(5) .skeleton-box {
+  animation-delay: 0.4s;
+}
+
+.seat-row-skeleton:nth-child(6) .skeleton-box {
+  animation-delay: 0.5s;
+}
+
+.seat-row-skeleton:nth-child(7) .skeleton-box {
+  animation-delay: 0.6s;
+}
+
+.seat-row-skeleton:nth-child(8) .skeleton-box {
+  animation-delay: 0.7s;
+}
+
+.seat-row-skeleton:nth-child(9) .skeleton-box {
+  animation-delay: 0.8s;
+}
+
+.seat-row-skeleton:nth-child(10) .skeleton-box {
+  animation-delay: 0.9s;
+}
+
+.seat-row-skeleton:nth-child(11) .skeleton-box {
+  animation-delay: 1s;
+}
+
+.seat-row-skeleton:nth-child(12) .skeleton-box {
+  animation-delay: 1.1s;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .screen-text-skeleton {
+    width: 150px;
+    height: 35px;
+  }
+  
+  .seats-in-row-skeleton {
+    gap: 3px;
+  }
+  
+  .seat-item-skeleton {
+    width: 28px;
+    height: 28px;
+  }
+  
+  .row-label-skeleton {
+    width: 25px;
+  }
+  
+  .label-box-skeleton {
+    height: 18px;
+    width: 18px;
+  }
+  
+  .seat-legend-skeleton {
+    gap: 15px;
+  }
+  
+  .legend-seat-skeleton {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .legend-text-skeleton {
+    width: 50px;
+    height: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .screen-text-skeleton {
+    width: 120px;
+    height: 32px;
+  }
+  
+  .seat-item-skeleton {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .seats-in-row-skeleton {
+    gap: 2px;
+  }
+  
+  .legend-text-skeleton {
+    width: 45px;
+    height: 12px;
+  }
+}
