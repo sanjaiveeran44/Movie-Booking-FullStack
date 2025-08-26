@@ -1,0 +1,29 @@
+{
+    "upcoming": [
+      {
+        "id": 1,
+        "title": "Captain America",
+        "release": "2025-09-12",
+        "poster": "/assets/captainamerica.jpeg"
+      },
+      {
+        "id": 2,
+        "title": "Stranger Things",
+        "release": "2026-05-05",
+        "poster": "/assets/strangerthings.jpeg"
+      },
+      {
+        "id": 3,
+        "title": "SpiderMan: Far From Home",
+        "release": "2025-10-18",
+        "poster": "/assets/farfromhome.jpeg"
+      },
+      {
+        "id": 4,
+        "title": "F1",
+        "release": "2025-12-20",
+        "poster": "/assets/f1.jpeg"
+      }
+    ]
+  }
+  

@@ -13,7 +13,7 @@ const Hero = () => {
         </div>
         <img src={marvelLogo} alt="Marvel Studios" className="marvel-logo" />
 
-        <h1 className="movie-title">Guardians of the Galaxy</h1>
+        <h1 className="movie-Title">Guardians of the Galaxy</h1>
         <p className="movie-info">Action | Sci-Fi | 2h 0m</p>
 
         <p className="movie-desc">
